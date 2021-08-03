@@ -1,0 +1,28 @@
+.navBar {
+  position: relative;
+  background-color:#045FB4;
+  overflow: hidden;
+
+  .navLogo {
+    float: left;
+  }
+
+  .navItem {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 30px 70px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .navItem:hover {
+    text-decoration: underline;
+  }
+
+  .logo {
+    width: 135px;
+    margin: 15px;
+  }
+}

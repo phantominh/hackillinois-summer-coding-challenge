@@ -22,6 +22,11 @@ const Mentors = () => {
         <div>
             {mentors.map((mentor) => (
                 <div>
+                <img src={mentor.profile} alt={mentor.firstName}></img>
+                {mentor.firstName}
+                <br/>
+                {mentor.lastName}
+                <br/>
                 {mentor.description}
                 </div>
             ))}
