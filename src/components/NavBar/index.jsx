@@ -1,5 +1,4 @@
 import React from 'react';
-import clsx from 'clsx';
 
 import LOGO from "../../assets/logo.svg";
 import styles from "./styles.module.scss"

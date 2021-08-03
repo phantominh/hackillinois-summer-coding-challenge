@@ -1,0 +1,75 @@
+.container {
+    position: absolute;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1;
+    background-color: #05365f;
+    height: 100%;
+}
+
+.mentor_header {
+    position: absolute;
+    top: 100px;
+    text-align: left;
+    text-transform: capitalize;
+    padding-left: 50px;
+    color: white;
+    font-size: 40;
+}
+
+.mentor_container {
+    position: absolute;
+    top: 200px;
+    bottom:0;
+    left:50px;
+    right:50px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    max-height: 750px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: justify;
+}
+
+.mentor_card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    padding: 30px 10px 30px 30px;
+    margin: 4px;
+    white-space: nowrap;
+    
+    .mentor_image {
+        height: 150px;
+        width: 150px;
+        min-width: 150px;
+        border-radius: 50%;
+        margin: 0 20px 0 0;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .mentor_text {
+        color: white;
+        max-width: calc(100% - 300px);
+        padding-left: 40px;
+
+        .mentor_name {
+            font-size: 18px;
+            font-weight: 600;
+            margin: 0 0 10px 0;
+        }
+
+        .mentor_description {
+            display: inline-block;
+            font-size: 15px;
+            white-space: normal;
+        }
+    }
+}

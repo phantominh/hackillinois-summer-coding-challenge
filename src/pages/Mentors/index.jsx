@@ -19,17 +19,25 @@ const Mentors = () => {
 
     // FIXME: Data not loaded on first render
     return (
-        <div>
-            {mentors.map((mentor) => (
-                <div>
-                <img src={mentor.profile} alt={mentor.firstName}></img>
-                {mentor.firstName}
-                <br/>
-                {mentor.lastName}
-                <br/>
-                {mentor.description}
-                </div>
-            ))}
+        <div className={styles.container}>
+            <div className={styles.mentor_header}>
+                <h2>MENTORS</h2>
+            </div>
+            <div className={styles.mentor_container}>
+                {mentors.map((mentor) => (
+                    <div className={styles.mentor_card}>
+                        <div className={styles.mentor_image} style={{ backgroundImage: `url(${mentor.profile})` }} />
+                        <div className={styles.mentor_text}>
+                            <div className={styles.mentor_name}>
+                                {mentor.firstName} {mentor.lastName}
+                            </div>
+                            <div className={styles.mentor_description}>
+                                {mentor.description}
+                            </div>
+                        </div>
+                    </div>
+                ))}
+            </div>
         </div>
     )
 };
